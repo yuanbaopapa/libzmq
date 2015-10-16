@@ -30,7 +30,12 @@
 #ifndef __ZMQ_STDINT_HPP_INCLUDED__
 #define __ZMQ_STDINT_HPP_INCLUDED__
 
+#ifdef _MSC_VER
+#define ZMQ_USE_SELECT
+#define ZMQ_HAVE_WINDOWS
+#else
 #include "platform.hpp"
+#endif
 
 #if defined ZMQ_HAVE_SOLARIS || defined ZMQ_HAVE_OPENVMS
 

@@ -85,7 +85,7 @@ extern "C" {
 #if defined ZMQ_HAVE_SOLARIS || defined ZMQ_HAVE_OPENVMS
 #   include <inttypes.h>
 #else
-#   include <stdint.h>
+#   include <stdint.hpp>
 #endif
 
 
